@@ -10,7 +10,7 @@ public class Application {
     public static void main(String[] args) throws Exception {
         ServiceConfig<DemoServiceImpl> service = new ServiceConfig<>();
         service.setApplication(new ApplicationConfig("dubbo-demo-api-provider"));
-        service.setRegistry(new RegistryConfig("zookeeper://zookeeper.app:2181"));
+        service.setRegistry(new RegistryConfig("zookeeper://10.97.18.197.app:2181"));
         service.setInterface(DemoService.class);
         service.setRef(new DemoServiceImpl());
         service.export();
