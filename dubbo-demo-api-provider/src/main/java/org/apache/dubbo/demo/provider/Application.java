@@ -2,6 +2,7 @@ package org.apache.dubbo.demo.provider;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
+import org.apache.dubbo.container.Main;
 import org.apache.dubbo.demo.DemoService;
 
 public class Application {
@@ -14,6 +15,8 @@ public class Application {
         service.setInterface(DemoService.class);
         service.setRef(new DemoServiceImpl());
         service.export();
+        System.in.read();
+        System.in.read();
         System.in.read();
     }
 }
