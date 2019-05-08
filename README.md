@@ -1,4 +1,5 @@
 # dubbo-dk
+<pre>
 node {
   //设置版本
    sh "echo `date +%Y%m%d%H-`$env.BUILD_ID > build.v"
@@ -43,3 +44,4 @@ node {
         '''
    }
 }
+</pre>
