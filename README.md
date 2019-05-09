@@ -1,15 +1,15 @@
-# dubbo-dk
+# pipeline配置
 <pre>
 pipeline {
     agent any
     environment {
         //发布的名称 
        def deploy_name='dk'
-       //hub或私服的用户名 
+       //私服的用户名 
        def hub_name ='297513458'
-       //hub或私服的密码
+       //私服的密码
        def hub_password='密码'
-       //服务开放的端口
+       //开放的服务端口
        def target_port=20880
        //k8s的namespace
        def namespace='app'
