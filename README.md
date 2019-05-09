@@ -8,7 +8,7 @@ pipeline {
        //hub或私服的用户名 
        def hub_name ='297513458'
        //hub或私服的密码
-       def hub_password='Kkk888888'
+       def hub_password='密码'
        //服务开放的端口
        def target_port=20880
        //k8s的namespace
@@ -66,7 +66,7 @@ pipeline {
                    if [ $count == 2 ]
                    then
                         echo "exec update"
-                        kubectl set image deployments/$deploy_name $deploy_name=$√/${deploy_name}:$v --namespace=$namespace
+                        kubectl set image deployments/$deploy_name $deploy_name=${deploy_name}:$v --namespace=$namespace
                     else
                         echo " exec deploy"
                     kubectl run ${deploy_name} --image=$hub_name/${deploy_name}:$v --replicas=3 --namespace=$namespace
