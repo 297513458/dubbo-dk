@@ -1,4 +1,4 @@
-# pipeline配置
+# 从git到k8s部署的pipeline配置信息
 <pre>
 pipeline {
     agent any
