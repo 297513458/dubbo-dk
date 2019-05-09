@@ -4,7 +4,7 @@ pipeline {
     agent any
     environment {
        def deploy_name='dk'
-       def password='Kkk888888'
+       def password='密码'
        def target_port=20880
    }
     parameters {
