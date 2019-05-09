@@ -64,7 +64,7 @@ pipeline {
                    if [ $count == 2 ]
                    then
                         echo "exec update"
-                        kubectl set image deployments/$deploy_name $deploy_name=$$hub_name/${deploy_name}:$v --namespace=$namespace
+                        kubectl set image deployments/$deploy_name $deploy_name=$hub_name/${deploy_name}:$v --namespace=$namespace
                     else
                         echo "exec deploy"
                     kubectl run ${deploy_name} --image=$hub_name/${deploy_name}:$v --replicas=3 --namespace=$namespace
