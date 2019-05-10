@@ -77,3 +77,6 @@ pipeline {
    }
 }
 </pre>
+# 从私服拉取
+kubectl create secret docker-registry alisc --docker-server=registry.cn-hangzhou.aliyuncs.com --docker-username=用户名 --docker-password=密码 --docker-email=用户名 --namespace=app
+                echo 'mvn clean package'
