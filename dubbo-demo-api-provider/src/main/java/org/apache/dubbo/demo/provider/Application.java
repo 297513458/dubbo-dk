@@ -12,7 +12,7 @@ public class Application {
 			public void run() {
 				ServiceConfig<DemoServiceImpl> service = new ServiceConfig<>();
 				service.setApplication(new ApplicationConfig("dubbo-demo-api-provider"));
-				service.setRegistry(new RegistryConfig("zookeeper://192.168.0.167:2181"));
+				service.setRegistry(new RegistryConfig("zookeeper://192.168.0.156:2181"));
 				service.setInterface(DemoService.class);
 				service.setRef(new DemoServiceImpl());
 				service.export();
